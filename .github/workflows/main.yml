@@ -15,7 +15,12 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm install
-
+      - run: echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
+        env:
+           NODE_AUTH_TOKEN: ${{ github.token }}
+         
+      - run: ls -a
+         
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
