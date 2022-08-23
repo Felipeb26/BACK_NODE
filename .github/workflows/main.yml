@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.registry.com/
-          scope: Felipeb26
+          scope: felipeb26
       - run: npm install
       - run: npm publish
         env:
