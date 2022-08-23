@@ -17,7 +17,7 @@ jobs:
       - run: npm install
       - run: echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
         env:
-          NODE_AUTH_TOKEN: ${{ github.token }}
+          NODE_AUTH_TOKEN: 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
          
       - run: ls -a
          
@@ -36,4 +36,4 @@ jobs:
       - run: npm install
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.BACK_NODE}}
+          NODE_AUTH_TOKEN: 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
