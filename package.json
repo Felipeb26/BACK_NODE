@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"publishConfig": {
-		"Felipeb26:registry": "https://npm.pkg.github.com"
+		"Felipeb26:registry": "https://npm.pkg.github.com/felipeb26/"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",

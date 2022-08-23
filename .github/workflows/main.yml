@@ -17,7 +17,7 @@ jobs:
       - run: npm install
       - run: echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: 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
          
       - run: ls -a
          
@@ -33,8 +33,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-          scope: '@felipeb26' 
+          scope: felipeb26 
       - run: npm install
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: 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
